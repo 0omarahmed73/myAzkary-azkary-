@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewJS</title>
+  <!-- <link rel="stylesheet" href="normalize.css"> -->
+  <link href="dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="addZikrPage rounded-xl p-5 sm:p-10 hideAdd">
+    <span class="xSign">x</span>
+    <h3 class="font-bold mb-3 bg-orange-600 text-white px-5 py-3 rounded-lg">اضافة ذكر جديد</h3>
+    <input type="text" name="zikr" placeholder="اضف الذكر" id="">
+    <input type="number" name="count" placeholder="عدد التكرارات" id="">
+    <input type="submit" value="اضافة" class="bg-red-700 text-white px-10 py-1 mt-5 hover:opacity-80">
+  </div>
+  <div class="overlay"></div>
+<div class="parent flex items-center flex-col">
+  <h1 class="bg-black text-white px-4 py-2 night zikrName">اذكار المساء <i class="fa fa-moon-o" aria-hidden="true"></i>
+  </h1>
+  <h1 class="bg-black text-white px-4 py-2 morning zikrName">اذكار الصباح <i class="fa fa-sun-o" aria-hidden="true"></i>
+  </h1>
+  <div class="text-white p-3 mb-3 rounded-lg cursor-pointer hover:opacity-70  bg-emerald-600 buttonAddZikr">اضافة ذكر جديد</div>
+    <div class="container m-auto flex flex-col items-center">
+</div>
+</div>
+<div class="deleteZikrMessage">
+  <div class="innerDiv bg-white text-center flex items-center justify-center flex-col"><p>هل انت متاكد ؟</p>
+    <div class="flex flex-row-reverse justify-center items-center my-3 areYouSure">
+      <button class="px-4 hover:opacity-80 py-1 ml-3 bg-red-600 text-white rounded-lg ">نعم</button><button class=" rounded-lg text-white px-4 hover:opacity-80 py-1  bg-red-600">لا</button>
+    </div>
+</div>
+</div>
+<div class="footer-parts">
+  <footer class="footer text text-center"></span> 
+  </footer>
+  <div class="icons"><i class="fa fa-github-square m-3" aria-hidden="true"></i><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+  </div>
+</div>
+  <script src="main.js"></script>
+</body>
+
+</html>

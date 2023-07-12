@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --azkarBG : #151141;
+  --zikrBG : #462ec7;
+  --morningAzkar : rgb(11, 159, 213);
+  --morningzikrColor : rgb(0, 50, 78);
+    transition: 0.5s;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.parent {
+  min-height: 100vh;
+  background-color: var(--azkarBG) !important;
+  transition: 0.5s;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.count {
+border: 1px solid rgb(178, 177, 177);  
+}
+
+.container {
+  user-select: none;
+  position: relative;
+  margin: 10px;
+}
+
+.zikr {
+  background-color: var(--zikrBG) !important;
+  transition: 0.5s;
+
+}
+
+.allCard {
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-out, height 0.5s ease-out;
+  margin-bottom: 10px;
+
+}
+  .hideCard {
+  opacity: 0;  
+}
+
+.buttonAddZikr {
+  transition: 0.5s;
+  margin-top: 11px;
+}
+
+.allCard:hover {
+  opacity: 0.7;
+}
+
+.addZikrPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 220px;
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%,-50%);
+  background-color: black;
+  transition: 0.7s;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.701);
+  z-index: 500;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: -1;
+}
+input {
+  border: 1px solid #c5c3c3; 
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+input[type='submit']{
+  cursor: pointer;
+}
+
+.addZikrPage span {
+  position: absolute;
+  content: 'x';
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -13px;
+  right: -10px;
+}
+
+.addZikrPage.hideAdd {
+  opacity: 0;
+  z-index: -1;
+}
+
+.addZikrPage.showAdd {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.removeZikr {
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  background-color: cadetblue;
+  padding: 3px 10px;
+}
+
+.deleteZikrMessage {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.469);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.innerDiv {
+  border-radius: 20px;
+  padding:7px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%,-50%);
+}
+
+.innerDiv button {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.deleteZikrMessage.hideIt {
+  opacity : 0;
+  z-index: -1;
+  display: none;
+}
+
+.deleteZikrMessage.showIt {
+  opacity : 1;
+  z-index: 1000;
+  display: block;
+}
+
+.zikrName {
+  margin: 0;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.zikrName i {
+  margin-left: 5px;
+}
+
+.footer {
+  background-color: var(--zikrBG);
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.footer-parts {
+  background-color: var(--zikrBG);
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.footer-parts *{
+  display: inline-block;
+}
+
+.footer-parts .icons {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icons * {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.icons i:hover {
+  opacity: 0.7;
+  
+}
